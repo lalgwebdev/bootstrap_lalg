@@ -1,0 +1,140 @@
+/* lalg-global.css
+ *
+ * Authored by MJH
+ * 08/01/2024
+ *
+ * For css changes that affect every page. Primarily the header and layout changes.
+ */
+
+/************* General sitewide changes. **************/
+body, h1, h2, p, a, ul, li {font-family: verdana;}
+h2 {font-size: 2.2em;}
+p, a, time {font-size: 1.3em; line-height: 135%;}
+p a, h2 a { font-size: 100%; line-height: 100%; color: #0a8ebd }
+ol, ul { padding-left: 40px }
+hr {border-top: 2px solid #ccc;}
+.region-sidebar-first .views-row a {font-size: 1.3em; }
+img {object-fit: cover;}
+
+/* Header */
+.region-header {
+  display: flex;
+}
+
+/* Site Branding */
+.site-branding {
+  flex: 7;
+}
+
+.site-branding a {
+  font-size: 4rem;
+  color: #0a8ebd;
+}
+
+/* Search Block */
+.lalg-search {
+  flex: 3;
+  margin-left: 15px;
+}
+
+.lalg-search .button {  
+  background-image: url(../images/ico-search.png);  
+  background-repeat: no-repeat;
+  background-color: white;	  
+  color: transparent;
+  background-position: center;
+}
+
+/* Current User Block */
+.lalg-current-user {
+  flex: 1;
+  margin-left: 15px;
+}
+
+/* Navbar (Menu) */
+.dialog-off-canvas-main-canvas .navbar-default {
+  background-color: #f8f8f800;
+}
+
+.dialog-off-canvas-main-canvas .navbar {
+  margin-bottom: 0px;
+  border: 0px
+}
+
+/* Menu bar - background colour all way across */
+ul.sf-menu.sf-style-blue {
+    width: 100%;
+}
+
+/* Top Level Menu Color (Light) */
+ul.sf-menu.sf-style-blue,
+ul.sf-menu.sf-style-blue li {
+    background-color: #3270c5;
+}
+
+/* Top Level Menu Color Hover (Dark) */
+ul.sf-menu.sf-style-blue a:hover,
+ul.sf-menu.sf-style-blue li:hover,
+ul.sf-menu.sf-style-blue span.nolink:hover,
+ul.sf-menu.sf-style-blue li.sfHover,
+ul.sf-menu.sf-style-blue a:focus {
+    background-color: #0151a4;
+}
+
+/* Submenu Color Hover (Light) */
+ul.sf-menu.sf-style-blue .sf-depth-2:hover,
+ul.sf-menu.sf-style-blue span.nolink.sf-depth-2:hover,
+ul.sf-menu.sf-style-blue .sf-depth-3:hover {
+    background-color: #3270c5;
+}
+
+/* Fix menu wrapping issue. */
+ul.sf-menu li {
+  display: inline-block;
+  float: none;
+}
+
+ul.sf-menu {
+  margin-bottom: 0px;
+  line-height: inherit;
+  border-radius: 10px;
+}
+
+ul.sf-menu.sf-style-blue {
+  margin-bottom: 0px;
+}
+
+ul.sf-menu a {
+  font-size: 16px;
+}
+
+ul.sf-menu span {
+  font-size: medium;
+}
+
+.block-superfishmain ul.sf-menu > :first-child {
+  margin-left: 20px;
+}
+
+/* If the menu item has no link, make it's text the same as if it had a link  */
+ul.sf-menu .sf-with-ul {
+  font-size:16px;
+  font-family: verdana;
+  padding: 12px 36px 12px 16px;
+}
+
+@media screen and (min-width: 1400px) {
+  .navbar.container {
+    max-width: 100%;
+  }
+  .container > .navbar-header {
+    width: 100%;
+  }
+}
+
+/* footer */
+@media screen and (min-width: 1400px) {
+  .footer {
+    width: 98%;
+  }
+}
