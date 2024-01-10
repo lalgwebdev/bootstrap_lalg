@@ -1,0 +1,28 @@
+framework:
+  css:
+    theme:
+      css/lalg-global.css: { weight: 10 }
+#      css/lalg-groups.css: { weight: 11 }
+#      css/lalg-membership.css: { weight: 12 }
+#      css/lalg-myprofile.css: { weight: 13 }
+#      css/lalg-search.css: { weight: 14 }
+#      css/lalg-site-search.css: { weight: 15 }
+#      css/lalg-webforms.css: { weight: 16 }
+#      css/lalg-legacy.css: { weight: 19 }
+#      css/lalg-editor5.css: { weight: 20 }
+#      css/temp.css: { weight: 21 }
+  js: 
+    js/lalg-environment.js: {}   
+#    js/lalg-calendar-jump.js: {}
+    
+lalg-articles-jump:
+  js:
+    js/lalg-select-jump.js: {}
+  dependencies:
+  - core/jquery
+
+lalg-views-focus:
+  js:
+    js/lalg-focus.js: {}
+  dependencies:
+  - core/jquery
